@@ -67,7 +67,7 @@ public:
 
 
 int main() {
-	int db = 20;
+	int db = 10;
 
 	szereplo** szereplok = new szereplo*[db];
 	for (int i = 0; i < db; i++) {
