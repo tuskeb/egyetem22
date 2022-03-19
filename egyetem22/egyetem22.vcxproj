@@ -149,6 +149,7 @@
   <ItemGroup>
     <ClInclude Include="display.h" />
     <ClInclude Include="dora_szereplo.h" />
+    <ClInclude Include="kristof_szereplo.h" />
     <ClInclude Include="szereplo.h" />
     <ClInclude Include="tanarur_szereplo.h" />
     <ClInclude Include="tibor_szereplo.h" />
