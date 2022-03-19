@@ -6,7 +6,7 @@ class tanarur_szereplo: public szereplo
 	virtual void szamit() {
 		this->x++;
 		if (x > 70) {
-			x = 0;
+			x = 1;
 		}
 	}
 };
