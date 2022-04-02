@@ -1,4 +1,5 @@
 #pragma once
+#include "szereplo.h"
 class zsolt_szereplo :public szereplo
 {
 public:
