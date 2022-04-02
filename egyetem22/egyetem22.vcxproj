@@ -143,7 +143,7 @@
     <ClCompile Include="display.cpp" />
     <ClCompile Include="dora_szereplo.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="kristof.cpp" />
+    <ClCompile Include="kristof_szereplo.cpp" />
     <ClCompile Include="szereplo.cpp" />
     <ClCompile Include="tanarur_szereplo.cpp" />
     <ClCompile Include="tibor_szereplo.cpp" />
