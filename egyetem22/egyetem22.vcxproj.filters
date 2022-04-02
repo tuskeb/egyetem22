@@ -36,7 +36,7 @@
     <ClCompile Include="dani_szereplo.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="gabor_szereplo.cpp">
+    <ClCompile Include="kristof.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
