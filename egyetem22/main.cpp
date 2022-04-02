@@ -9,7 +9,8 @@
 #include "tanarur_szereplo.h"
 #include "kristof_szereplo.h"
 #include "dani_szereplo.h"
-
+#include "gabor_szereplo.h"
+#include "zsolt_szereplo.h"
 
 using namespace std;
 
@@ -26,9 +27,8 @@ int main() {
 	szereplok[2] = new kristof_szereplo(10, 5);
 	szereplok[3] = new dora_szereplo(15, 5);
 	szereplok[4] = new dani_szereplo(20, 5);
-	//szereplok[5] = new szereplo(25, 5);
-	//szereplok[6] = new szereplo(30, 5);
-	//szereplok[7] = new szereplo(35, 5);
+	szereplok[5] = new zsolt_szereplo(25, 5);
+	szereplok[6] = new gabor_szereplo(30, 5);
 
 	while(!GetKeyState(VK_F10)) {
 		for (int i = 0; i < db; i++) {
