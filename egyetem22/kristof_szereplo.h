@@ -1,3 +1,4 @@
+#include "szereplo.h"
 #pragma once
 class kristof_szereplo :public szereplo
 {
