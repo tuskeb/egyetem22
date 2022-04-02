@@ -50,5 +50,9 @@ public:
 		//cout << "Destruktor";
 	}
 
+	bool utkozike(const szereplo & masik) {
+		return this->x == masik.x && this->y == masik.y;
+	}
+
 };
 

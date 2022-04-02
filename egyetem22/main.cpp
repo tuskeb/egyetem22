@@ -18,15 +18,17 @@ using namespace std;
 int main() {
 
 	szereplo* t;
+	szereplo* x;
 	listakezeles<szereplo*> szereplok(200);
 	szereplok.hozzaad(new tibor_szereplo(2, 5));
 	szereplok.hozzaad(t = new tanarur_szereplo(5, 5));
-	szereplok.hozzaad(new kristof_szereplo(10, 5));
+	szereplok.hozzaad(x = new kristof_szereplo(5, 5));
 	szereplok.hozzaad(new dora_szereplo(15, 5));
 	szereplok.hozzaad(new dani_szereplo(20, 5));
 	szereplok.hozzaad(new zsolt_szereplo(25, 5));
 	szereplok.hozzaad(new gabor_szereplo(30, 5));
-
+	//cout << boolalpha << t->utkozike(*x) << endl;
+	
 	szereplok.eltavolitertek(t);
 
 	while (!GetKeyState(VK_F10)) {
@@ -39,5 +41,5 @@ int main() {
 	while (szereplok.elemszam() > 0) {
 		delete szereplok.eltavolit(0);
 	}
-
+	
 }

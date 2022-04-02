@@ -3,6 +3,6 @@
 
 class utkozes
 {
-	if 
+	
 };
 
