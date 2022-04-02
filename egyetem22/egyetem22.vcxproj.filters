@@ -33,6 +33,9 @@
     <ClCompile Include="dora_szereplo.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="dani_szereplo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="display.h">
@@ -51,6 +54,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="kristof_szereplo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dani_szereplo.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

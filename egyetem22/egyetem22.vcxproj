@@ -139,6 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="dani_szereplo.cpp" />
     <ClCompile Include="display.cpp" />
     <ClCompile Include="dora_szereplo.cpp" />
     <ClCompile Include="main.cpp" />
@@ -147,6 +148,7 @@
     <ClCompile Include="tibor_szereplo.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="dani_szereplo.h" />
     <ClInclude Include="display.h" />
     <ClInclude Include="dora_szereplo.h" />
     <ClInclude Include="kristof_szereplo.h" />
