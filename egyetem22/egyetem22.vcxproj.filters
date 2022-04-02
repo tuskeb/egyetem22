@@ -42,6 +42,12 @@
     <ClCompile Include="zsolt_szereplo.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="gabor_szereplo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="listakezeles.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="display.h">
@@ -66,6 +72,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="zsolt_szereplo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="gabor_szereplo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="listakezeles.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
