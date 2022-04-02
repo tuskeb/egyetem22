@@ -19,15 +19,15 @@ int main() {
 
 	szereplo* t;
 	listakezeles<szereplo*> szereplok(200);
-	//szereplok.hozzaad(new tibor_szereplo(2, 5));
-	//szereplok.hozzaad(t = new tanarur_szereplo(5, 5));
-	//szereplok.hozzaad(new kristof_szereplo(10, 5));
+	szereplok.hozzaad(new tibor_szereplo(2, 5));
+	szereplok.hozzaad(t = new tanarur_szereplo(5, 5));
+	szereplok.hozzaad(new kristof_szereplo(10, 5));
 	szereplok.hozzaad(new dora_szereplo(15, 5));
-	//szereplok.hozzaad(new dani_szereplo(20, 5));
-	//szereplok.hozzaad(new zsolt_szereplo(25, 5));
-	//szereplok.hozzaad(new gabor_szereplo(30, 5));
+	szereplok.hozzaad(new dani_szereplo(20, 5));
+	szereplok.hozzaad(new zsolt_szereplo(25, 5));
+	szereplok.hozzaad(new gabor_szereplo(30, 5));
 
-	//szereplok.eltavolitertek(t);
+	szereplok.eltavolitertek(t);
 
 	while (!GetKeyState(VK_F10)) {
 		for (int i = 0; i < szereplok.elemszam(); i++) {
