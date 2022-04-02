@@ -19,10 +19,6 @@ protected:
 
 	}
 
-	virtual bool vege() {
-		return false;
-	}
-
 
 public:
 
@@ -47,11 +43,17 @@ public:
 	}
 
 	~szereplo() {
+		torol();
 		//cout << "Destruktor";
 	}
 
 	bool utkozike(const szereplo & masik) {
 		return this->x == masik.x && this->y == masik.y;
+	}
+
+
+	virtual bool vege() {
+		return false;
 	}
 
 };

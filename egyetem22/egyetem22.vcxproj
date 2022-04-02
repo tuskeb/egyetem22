@@ -141,7 +141,7 @@
   <ItemGroup>
     <ClCompile Include="dani_szereplo.cpp" />
     <ClCompile Include="display.cpp" />
-    <ClCompile Include="dora_szereplo.cpp" />
+    <ClCompile Include="csiga.cpp" />
     <ClCompile Include="gabor_szereplo.cpp" />
     <ClCompile Include="listakezeles.cpp" />
     <ClCompile Include="main.cpp" />
@@ -150,12 +150,12 @@
     <ClCompile Include="tanarur_szereplo.cpp" />
     <ClCompile Include="tibor_szereplo.cpp" />
     <ClCompile Include="utkozes.cpp" />
-    <ClCompile Include="zsolt_szereplo.cpp" />
+    <ClCompile Include="jobbrolbalra.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="dani_szereplo.h" />
     <ClInclude Include="display.h" />
-    <ClInclude Include="dora_szereplo.h" />
+    <ClInclude Include="csiga.h" />
     <ClInclude Include="gabor_szereplo.h" />
     <ClInclude Include="kristof_szereplo.h" />
     <ClInclude Include="listakezeles.h" />
@@ -163,7 +163,7 @@
     <ClInclude Include="tanarur_szereplo.h" />
     <ClInclude Include="tibor_szereplo.h" />
     <ClInclude Include="utkozes.h" />
-    <ClInclude Include="zsolt_szereplo.h" />
+    <ClInclude Include="jobbrolbalra.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

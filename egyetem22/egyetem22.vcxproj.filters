@@ -30,7 +30,7 @@
     <ClCompile Include="tibor_szereplo.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="dora_szereplo.cpp">
+    <ClCompile Include="csiga.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="dani_szereplo.cpp">
@@ -39,7 +39,7 @@
     <ClCompile Include="kristof_szereplo.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="zsolt_szereplo.cpp">
+    <ClCompile Include="jobbrolbalra.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="gabor_szereplo.cpp">
@@ -65,7 +65,7 @@
     <ClInclude Include="tibor_szereplo.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="dora_szereplo.h">
+    <ClInclude Include="csiga.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="kristof_szereplo.h">
@@ -74,7 +74,7 @@
     <ClInclude Include="dani_szereplo.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="zsolt_szereplo.h">
+    <ClInclude Include="jobbrolbalra.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="gabor_szereplo.h">

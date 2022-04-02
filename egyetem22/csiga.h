@@ -3,13 +3,12 @@
 #include <time.h>
 #include <stdio.h>    
 #include <stdlib.h>
-class dora_szereplo :public szereplo
+class csiga :public szereplo
 {
 public:
-	dora_szereplo(int x, int y) : szereplo(x, y, 'D') {
-		srand(time(0));
-		this->x = rand()%70+1;
-		this->y = 21;
+	csiga(int x, int y) : szereplo(x, y, 'D') {
+		this->x = x;
+		this->y = y;
 	}
 	virtual void szamit() {
 		if (GetAsyncKeyState(VK_RIGHT)) {
