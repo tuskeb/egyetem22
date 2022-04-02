@@ -23,14 +23,25 @@ int main() {
 	szereplo* cs = new csiga(rand() % 70 + 1, 21);
 	
 	szereplok.hozzaad(cs);
-	szereplok.hozzaad(new jobbrolbalra(rand() % 70 + 1,  2));
+	for (int i = 0; i < 30; i++) {
+		szereplok.hozzaad(new jobbrolbalra(rand() % 70 + 1, rand() % 4 + 4));
+	}
 
-	while (!GetKeyState(VK_F10)) {
+	bool elet = true;
+
+	while (!GetKeyState(VK_F10) && elet) {
 		for (int i = 0; i < szereplok.elemszam(); i++) {
 			szereplok[i]->rajzol();
 		}
 	
 		std::this_thread::sleep_for(160ms);
+
+		for (int i = 0; i < szereplok.elemszam(); i++) {
+			if (cs != szereplok[i] && cs->utkozike(*szereplok[i])) {
+				elet = false;
+				break;
+			}
+		}
 
 		for (int i = 0; i < szereplok.elemszam(); i++) {
 			if (szereplok[i]->vege()) {
