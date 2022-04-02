@@ -9,7 +9,7 @@
 #include "tanarur_szereplo.h"
 #include "kristof_szereplo.h"
 #include "dani_szereplo.h"
-
+#include "gabor_szereplo.h"
 
 using namespace std;
 
