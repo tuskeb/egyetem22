@@ -2,6 +2,11 @@
 #include "szereplo.h"
 class tibor_szereplo :public szereplo
 {
+public:
+	tibor_szereplo(int x, int y, char c) : szereplo(x, y, c) {
+
+	}
+
 	virtual void szamit() {
 		this->x++;
 		if (x > 70) {
