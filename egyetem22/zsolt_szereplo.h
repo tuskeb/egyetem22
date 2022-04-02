@@ -1,5 +1,9 @@
 #pragma once
-#include "szereplo.h" //jobbról balra
+#include "szereplo.h"
+#include "display.h"//jobbról balra
+#include <time.h>
+#include <stdlib.h>
+#include <stdio.h>
 class zsolt_szereplo :public szereplo
 {
 public:
@@ -7,10 +11,23 @@ public:
 
 	}
 	virtual void szamit() {
-		this->x = x + 6;
-		if (x > 50)x = 0;
-		this->y = y--;
-		if (y < 1) y = 47;
+		this->x = x++;
+		if (x > 70) x = 0;
+		this->y = y;
+		if (y > 20) y = 0;
 	}
+
+	balramegyunk() {
+	srand(time(0));
+	double y = rand() % 50;
+
+	x--;
+	if (x > 70) {
+		x = 0;
+	} //vissza 0ra ha eléri a 70et
+
+}
+
+		//vége függvény- vegén ha elért jobbra akkor ad igazat
 };
 
