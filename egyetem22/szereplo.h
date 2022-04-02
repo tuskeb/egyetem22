@@ -19,6 +19,10 @@ protected:
 
 	}
 
+	virtual bool vege() {
+		return false;
+	}
+
 
 public:
 
