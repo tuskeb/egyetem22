@@ -149,6 +149,7 @@
     <ClCompile Include="szereplo.cpp" />
     <ClCompile Include="tanarur_szereplo.cpp" />
     <ClCompile Include="tibor_szereplo.cpp" />
+    <ClCompile Include="utkozes.cpp" />
     <ClCompile Include="zsolt_szereplo.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -161,6 +162,7 @@
     <ClInclude Include="szereplo.h" />
     <ClInclude Include="tanarur_szereplo.h" />
     <ClInclude Include="tibor_szereplo.h" />
+    <ClInclude Include="utkozes.h" />
     <ClInclude Include="zsolt_szereplo.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
