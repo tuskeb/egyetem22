@@ -1,5 +1,9 @@
 #pragma once
-class gabor_szereplo
+#include "szereplo.h"
+class gabor_szereplo: public szereplo
 {
-};
+	gabor_szereplo(int x, int y) {
+
+	}
+};  
 
