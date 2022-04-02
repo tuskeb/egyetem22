@@ -7,6 +7,8 @@
 #include "dora_szereplo.h"
 #include "tibor_szereplo.h"
 #include "tanarur_szereplo.h"
+#include "kristof_szereplo.h"
+
 
 using namespace std;
 
@@ -18,9 +20,11 @@ int main() {
 		szereplok[i] = NULL;
 		//cout << *szereplok[i] << endl;
 	}
-	szereplok[0] = new tibor_szereplo(2,5,'T');
-	szereplok[1] = new tanarur_szereplo(2, 5, 'U');
-	
+	szereplok[0] = new tibor_szereplo(2,5);
+	szereplok[1] = new tanarur_szereplo(5, 5);
+	szereplok[2] = new kristof_szereplo(10, 5);
+	szereplok[3] = new dora_szereplo(15, 5);
+
 	while(!GetKeyState(VK_F10)) {
 		for (int i = 0; i < db; i++) {
 			if (szereplok[i] != NULL) {

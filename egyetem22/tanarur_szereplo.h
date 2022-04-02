@@ -4,7 +4,7 @@
 class tanarur_szereplo: public szereplo
 {
 public:
-	tanarur_szereplo(int x, int y, char c) : szereplo(x, y, c) {
+	tanarur_szereplo(int x, int y) : szereplo(x, y, 'U') {
 
 	}
 

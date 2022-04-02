@@ -3,14 +3,25 @@
 #include "display.h"
 
 class szereplo {
+
 private:
 	void torol() {
 		display::draw(x, y, ' ');
 	}
 
-public:
-	int x, y;
+
+protected:
+
 	char c;
+	int x, y;
+
+	virtual void szamit() {
+
+	}
+
+
+public:
+
 	szereplo(int x, int y, char c) {
 		this->x = x;
 		this->y = y;
@@ -18,9 +29,6 @@ public:
 		//cout << "Konstruktor";
 	}
 
-	~szereplo() {
-		//cout << "Destruktor";
-	}
 
 	void rajzol() {
 		torol();
@@ -29,14 +37,13 @@ public:
 		//cout << *this;
 	}
 
-	virtual void szamit() {
-
-	}
-
-
 	friend ostream& operator<<(ostream& stream, szereplo& obj) {
 		stream << "[" << obj.x << ", " << obj.y << "]";
 		return stream;
+	}
+
+	~szereplo() {
+		//cout << "Destruktor";
 	}
 
 };
