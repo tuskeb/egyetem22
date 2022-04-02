@@ -1,9 +1,10 @@
-#include "szereplo.h"
+#include "szereplo.h" //utkozes vizsgalat
 #pragma once
 class kristof_szereplo :public szereplo
 {
 public:
 	kristof_szereplo(int x, int y) : szereplo(x, y, 'K') {
+
 
 	}
 	virtual void szamit() {
