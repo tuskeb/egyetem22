@@ -8,8 +8,8 @@ public:
 	}
 	virtual void szamit() {
 		this->x = x + 3;
-		if (x > 70)x = 0;
+		if (x > 30)x = 0;
 		this->y = y--;
-		if (y < 1) y = 50;
+		if (y < 1) y = 40;
 	}
 };
