@@ -3,7 +3,7 @@
 class zsolt_szereplo :public szereplo
 {
 public:
-	zsolt_szereplo(int x, int y) : szereplo(x, y, 'ZS') {
+	zsolt_szereplo(int x, int y) : szereplo(x, y, 'Z') {
 
 	}
 	virtual void szamit() {
