@@ -21,7 +21,7 @@ int main() {
 	szereplok[0] = new tibor_szereplo(2,5,'T');
 	szereplok[1] = new tanarur_szereplo(2, 5, 'U');
 	
-	while(GetKeyState(VK_RETURN)) {
+	while(!GetKeyState(VK_F10)) {
 		for (int i = 0; i < db; i++) {
 			if (szereplok[i] != NULL) {
 				szereplok[i]->rajzol();
