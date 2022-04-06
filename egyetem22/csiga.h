@@ -23,6 +23,11 @@ public:
 		if (GetAsyncKeyState(VK_LEFT)) {
 			x = x--;
 		}
+		if (*&y==1)
+		{
+			cout << "nyertel" << endl;
+		}
 
 	}
+	
 };
