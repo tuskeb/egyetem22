@@ -10,12 +10,12 @@ public:
 	dani_szereplo(int x, int y) : szereplo(x, y, 'O') {
 
 	}
-	dani_szereplo(int y) : szereplo(1, y, 'O') {
+	dani_szereplo(int y) : szereplo(0, y, 'O') {
 	}
 
 	virtual void szamit() {
 		if (x < 70) { this->x = x++; }
 	}
-	virtual bool utveg() { return x == 70; }
+	virtual bool vege() { return x == 70; }
 };
 
