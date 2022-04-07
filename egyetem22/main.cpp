@@ -20,7 +20,7 @@ int main() {
 
 	srand(time(0));
 
-	szereplo* cs = new csiga(rand() % 70 + 1, 21);
+	szereplo* cs = new csiga(rand() % 70 + 1, 9);
 	
 	szereplok.hozzaad(cs);
 	for (int i = 0; i < 30; i++) {
@@ -40,6 +40,7 @@ int main() {
 		for (int i = 0; i < szereplok.elemszam(); i++) {
 			if (cs != szereplok[i] && cs->utkozike(*szereplok[i])) {
 				elet = false;
+				cout << "Vesztettel! De hova lesznek a betuk a mondatbol??";
 				break;
 			}
 		}

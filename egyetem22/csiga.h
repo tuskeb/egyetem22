@@ -10,6 +10,7 @@ public:
 		this->x = x;
 		this->y = y;
 	}
+	
 	virtual void szamit() {
 		if (GetAsyncKeyState(VK_RIGHT)) {
 			x = x++;
