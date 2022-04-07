@@ -15,9 +15,9 @@ public:
 	}
 
 	virtual void szamit() {
-		if (x > 0) {
-			this->x = x--;
-		}
+		
+		if (x > 0) { this->x = x--; }
+		if (x <= 1) { this->x = x = 70; }
 	}
 
 	virtual bool vege() {
