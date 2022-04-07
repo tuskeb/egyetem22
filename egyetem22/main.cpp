@@ -40,7 +40,8 @@ int main() {
 		for (int i = 0; i < szereplok.elemszam(); i++) {
 			if (cs != szereplok[i] && cs->utkozike(*szereplok[i])) {
 				elet = false;
-				cout << "Vesztettel!"; //De hova lesznek a betuk a mondatbol ??
+				system("cls");
+				cout << "\nVesztettel!"; //De hova lesznek a betuk a mondatbol ??
 				break;
 			}
 		}
