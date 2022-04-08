@@ -42,7 +42,7 @@ int main() {
 			if (cs != szereplok[i] && cs->utkozike(*szereplok[i])) {
 				elet = false;
 				system("cls");
-				cout << "\nVesztettel!";
+				cout << "Vesztettel!", (1, 1);
 				break;
 			}
 		}
