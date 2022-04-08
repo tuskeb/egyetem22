@@ -13,6 +13,12 @@ public:
 		SetConsoleCursorPosition(output, pos);
 		cout << c;
 	}
+	static void end(int x, int y,string c) {
+		COORD pos = { x,y };
+		HANDLE output = GetStdHandle(STD_OUTPUT_HANDLE);
+		SetConsoleCursorPosition(output, pos);
+		cout << c;
+	}
 
 	/*
 	static int getWidth() {
