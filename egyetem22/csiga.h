@@ -12,16 +12,16 @@ public:
 	}
 	
 	virtual void szamit() {
-		if (GetAsyncKeyState(VK_RIGHT)) {
+		if (GetAsyncKeyState(VK_RIGHT) && x < 71) {
 			x = x++;
 		}
-		if (GetAsyncKeyState(VK_DOWN)) {
+		if (GetAsyncKeyState(VK_DOWN) && y < 9) {
 			y = y++;
 		}
-		if (GetAsyncKeyState(VK_UP)) {
+		if (GetAsyncKeyState(VK_UP) && y > 0) {
 			y = y--;
 		}
-		if (GetAsyncKeyState(VK_LEFT)) {
+		if (GetAsyncKeyState(VK_LEFT) && x > 0) {
 			x = x--;
 		}
 		if (*&y==0)

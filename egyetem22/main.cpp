@@ -25,7 +25,7 @@ int main() {
 	szereplok.hozzaad(cs);
 	for (int i = 0; i < 30; i++) {
 		szereplok.hozzaad(new jobbrolbalra(rand() % 70 + 1, rand() % 4 + 4));
-		szereplok.hozzaad(new dani_szereplo(rand() % 70 + 1, rand() % 4 + 0));
+		szereplok.hozzaad(new dani_szereplo(rand() % 70 + 1, rand() % 4 + 1));
 	}
 
 	bool elet = true;
