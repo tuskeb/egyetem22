@@ -50,27 +50,21 @@ int main() {
 				for (int i = 0; i < szereplok.elemszam(); i++) {
 					if (cs != szereplok[i] && cs->utkozike(*szereplok[i])) {
 						elet = false;
-						display::end(0,0,"Vesztettel");
+						display::end(0,0,"Vesztettel!");
+						cout << " Lepeseid szama: " << cs->lepes();
 						break;
 					}
 				}
 				bool cel_v = false;
 				szereplo* cel = new celvonal(1, 1);
-				int lep = 0;
 				if (cs == cel) {
 					cel_v = true;
 					system("cls");
-					cout << "Gratulalok nyertel!" << " Lepeseid szam: " << lep;
+					cout << "Gratulalok nyertel!" << " Lepeseid szama: ";
 					break;
-				}if (GetAsyncKeyState(VK_RIGHT) == true || GetAsyncKeyState(VK_DOWN) == true || GetAsyncKeyState(VK_UP) == true || GetAsyncKeyState(VK_LEFT) == true)
-				{
-					lep++;
-					//return lep; // nem jó, leállítja a progit :(
-
-					//ötletet kérnék, hogy számoljam a lépéseket rekord értékelés szempontjából (mennyi lépés alatt ér a célba)
+					
 				}
-
-
+				
 
 				for (int i = 0; i < szereplok.elemszam(); i++) {
 					if (szereplok[i]->vege()) {

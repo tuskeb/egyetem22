@@ -55,6 +55,8 @@ public:
 	virtual bool vege() {
 		return false;
 	}
-
+	virtual int lepes() {
+		return 0;
+	}
 };
 

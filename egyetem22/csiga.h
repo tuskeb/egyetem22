@@ -10,21 +10,28 @@ public:
 		this->x = x;
 		this->y = y;
 	}
-	
+	int lep = 0;
 	virtual void szamit() {
 		if (GetAsyncKeyState(VK_RIGHT) && x < 71) {
 			x = x++;
+			lep++;
 		}
 		if (GetAsyncKeyState(VK_DOWN) && y < 9) {
 			y = y++;
+			lep++;
 		}
 		if (GetAsyncKeyState(VK_UP) && y > 0) {
 			y = y--;
+			lep++;
 		}
 		if (GetAsyncKeyState(VK_LEFT) && x > 0) {
 			x = x--;
+			lep++;
 		}
 
+	}
+	int lepes() {
+		return lep;
 	}
 	virtual bool vege() {   //abban az esetben ha nem eszközölünk nehézségi szint növelést
 		return y == 0;
