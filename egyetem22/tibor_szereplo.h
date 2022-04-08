@@ -1,22 +1,41 @@
 #pragma once
+#include "szereplo.h" 
+#include <time.h>
+#include <stdio.h>    
+#include <stdlib.h>
+//#include "lovedek.h" 
 #include "szereplo.h"
-class tibor_szereplo :public szereplo
+#include "listakezeles.h"
+
+class xszarnyu :public szereplo
 {
 public:
-	tibor_szereplo(int x, int y) : szereplo(x, y, 'T') {
-
+	xszarnyu(int x, int y) : szereplo(x, y, 'X') {
+		this->x = x;
+		this->y = y;
 	}
-
+	int lep = 0;
 	virtual void szamit() {
-		this->x++;
-		if (x > 70) {
-			x = 0;
+		if (GetAsyncKeyState(VK_NUMPAD6)) {
+			x = x++;
 		}
-		this->y--;
-		if (y < 1) {
-			y = 20;
+		if (GetAsyncKeyState(VK_NUMPAD2)) {
+			y = y++;
+		}
+		if (GetAsyncKeyState(VK_NUMPAD8)) {
+			y = y--;
+		}
+		if (GetAsyncKeyState(VK_NUMPAD4)) {
+			x = x--;
+		}
+
+		if (GetAsyncKeyState(VK_NUMPAD9)) {
+			cout << "|";
+
+			/*listakezeles<szereplo*> lovedekek(200);
+			szereplo* lov = new lovedek(x, y - 1);
+			lovedekek.hozzaad(lov);*/
 		}
 
 	}
 };
-

@@ -13,6 +13,8 @@
 #include "jobbrolbalra.h"
 #include "listakezeles.h"
 #include "celvonal.h"
+#include "visszaszamol.h"
+
 
 using namespace std;
 
@@ -31,8 +33,13 @@ int main() {
 			srand(time(0));
 
 			szereplo* cs = new csiga(rand() % 70 + 1, 9);
+			szereplo* vissza = new visszaszamlal(0, 12);
+			szereplo* tibor = new xszarnyu(rand() % 50 + 1, 9);
 
+			
 			szereplok.hozzaad(cs);
+			szereplok.hozzaad(vissza);
+			szereplok.hozzaad(tibor);
 			for (int i = 0; i < 30; i++) {
 				szereplok.hozzaad(new jobbrolbalra(rand() % 70 + 1, rand() % 4 + 4));
 				szereplok.hozzaad(new dani_szereplo(rand() % 70 + 1, rand() % 3 + 1));
@@ -48,7 +55,7 @@ int main() {
 				std::this_thread::sleep_for(160ms);
 
 				for (int i = 0; i < szereplok.elemszam(); i++) {
-					if (cs != szereplok[i] && cs->utkozike(*szereplok[i])) {
+					if (cs != szereplok[i] && cs->utkozike(*szereplok[i]) || tibor != szereplok[i] && tibor->utkozike(*szereplok[i])) {
 						elet = false;
 						display::end(0,0,"Vesztettel!");
 						cout << " Lepeseid szama: " << cs->lepes();
