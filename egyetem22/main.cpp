@@ -65,18 +65,13 @@ int main() {
 						cout << " Lepeseid szama: " << cs->lepes();
 						break;
 					}
+					if (cs->end()==true) {
+						elet = false;
+						display::end(0, 0, "Nyertel!");
+						cout << " Lepeseid szama: " << cs->lepes();
+						break;
+					}
 				}
-				bool cel_v = false;
-				szereplo* cel = new celvonal(1, 1);
-				if (cs == cel) {
-					cel_v = true;
-					system("cls");
-					cout << "Gratulalok nyertel!" << " Lepeseid szama: ";
-					break;
-					
-				}
-				
-
 				for (int i = 0; i < szereplok.elemszam(); i++) {
 					if (szereplok[i]->vege()) {
 						delete szereplok.eltavolit(i);

@@ -50,7 +50,9 @@ public:
 	bool utkozike(const szereplo & masik) {
 		return this->x == masik.x && this->y == masik.y;
 	}
-
+	virtual bool end() {
+		return false;
+	}
 
 	virtual bool vege() {
 		return false;
