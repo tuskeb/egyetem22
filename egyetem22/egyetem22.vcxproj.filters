@@ -86,5 +86,8 @@
     <ClInclude Include="utkozes.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="celvonal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

@@ -12,6 +12,7 @@
 #include "gabor_szereplo.h"
 #include "jobbrolbalra.h"
 #include "listakezeles.h"
+#include "celvonal.h"
 
 using namespace std;
 
@@ -41,9 +42,17 @@ int main() {
 			if (cs != szereplok[i] && cs->utkozike(*szereplok[i])) {
 				elet = false;
 				system("cls");
-				cout << "\nVesztettel!"; //De hova lesznek a betuk a mondatbol ??
+				cout << "\nVesztettel!";
 				break;
 			}
+		}
+		bool cel_v = false;
+		szereplo* cel = new celvonal(1, 1);
+		if (cs == cel) {
+			cel_v = true;
+			system("cls");
+			cout << "Gratulalok nyertel!";
+			break;
 		}
 
 

@@ -24,10 +24,6 @@ public:
 		if (GetAsyncKeyState(VK_LEFT) && x > 0) {
 			x = x--;
 		}
-		if (*&y==0)
-		{
-			cout << "nyertel" << endl;
-		}
 
 	}
 	virtual bool vege() {   //abban az esetben ha nem eszközölünk nehézségi szint növelést

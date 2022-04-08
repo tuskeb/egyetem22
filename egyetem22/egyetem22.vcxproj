@@ -157,6 +157,7 @@
     <ClInclude Include="display.h" />
     <ClInclude Include="csiga.h" />
     <ClInclude Include="gabor_szereplo.h" />
+    <ClInclude Include="celvonal.h" />
     <ClInclude Include="kristof_szereplo.h" />
     <ClInclude Include="listakezeles.h" />
     <ClInclude Include="szereplo.h" />
