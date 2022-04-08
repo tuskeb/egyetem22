@@ -92,5 +92,8 @@
     <ClInclude Include="visszaszamol.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="help.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

@@ -7,6 +7,7 @@
 #include "szereplo.h"
 #include "listakezeles.h"
 
+
 class xszarnyu :public szereplo
 {
 public:

@@ -158,6 +158,7 @@
     <ClInclude Include="csiga.h" />
     <ClInclude Include="gabor_szereplo.h" />
     <ClInclude Include="celvonal.h" />
+    <ClInclude Include="help.h" />
     <ClInclude Include="visszaszamol.h" />
     <ClInclude Include="kristof_szereplo.h" />
     <ClInclude Include="listakezeles.h" />
