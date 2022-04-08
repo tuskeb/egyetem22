@@ -28,11 +28,14 @@ public:
 			x = x--;
 			lep++;
 		}
-
 	}
 	int lepes() {
 		return lep;
 	}
+	virtual bool end() {
+		if(y ==0)return true;
+	}
+
 	virtual bool vege() {   //abban az esetben ha nem eszközölünk nehézségi szint növelést
 		return y == 0;
 	}
