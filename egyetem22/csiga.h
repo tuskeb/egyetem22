@@ -24,11 +24,13 @@ public:
 		if (GetAsyncKeyState(VK_LEFT)) {
 			x = x--;
 		}
-		if (*&y==1)
+		if (*&y==0)
 		{
 			cout << "nyertel" << endl;
 		}
 
 	}
-	
+	virtual bool vege() {   //abban az esetben ha nem eszközölünk nehézségi szint növelést
+		return y == 0;
+	}
 };
