@@ -4,13 +4,11 @@
 
 class szereplo {
 
-private:
+protected:
 	void torol() {
 		display::draw(x, y, ' ');
 	}
 
-
-protected:
 
 	char c;
 	int x, y;

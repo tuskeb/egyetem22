@@ -79,6 +79,25 @@ int main() {
 					}
 
 				}
+
+				/*if (GetAsyncKeyState(VK_NUMPAD6)) {
+					tibor->x = x++;
+				}
+				if (GetAsyncKeyState(VK_NUMPAD2)) {
+					tibor->y = y++;
+				}
+				if (GetAsyncKeyState(VK_NUMPAD8)) {
+					tibor->y = y--;
+				}*/
+				
+				if (GetAsyncKeyState(VK_NUMPAD9)) {
+					cout << "|";
+
+					/*listakezeles<szereplo*> lovedekek(200);
+					szereplo* lov = new lovedek(x, y - 1);
+					lovedekek.hozzaad(lov);*/
+				}
+
 			}
 
 			while (szereplok.elemszam() > 0) {
@@ -123,6 +142,10 @@ int main() {
 						break;
 					}
 				}
+				if (GetAsyncKeyState('W')) {
+					dynamic_cast<xszarnyu*>(tibor)->fel();
+				}
+
 				bool cel_v = false;
 				szereplo* cel = new celvonal(1, 1);
 				if (cs == cel) {
