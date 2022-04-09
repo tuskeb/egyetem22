@@ -135,7 +135,7 @@ int main() {
 				std::this_thread::sleep_for(160ms);
 
 				for (int i = 0; i < szereplok.elemszam(); i++) {
-					if (cs != szereplok[i] && cs->utkozike(*szereplok[i]) || tibor != szereplok[i] && tibor->utkozike(*szereplok[i])) {
+					if (szereplok[i]->tag != TAG_jatekos && cs != szereplok[i] && cs->utkozike(*szereplok[i]) || tibor != szereplok[i] && tibor->utkozike(*szereplok[i])) {
 						elet = false;
 						display::end(0, 0, "Vesztettel!");
 						cout << " Lepeseid szama: " << cs->lepes();

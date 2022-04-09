@@ -14,6 +14,7 @@ public:
 	xszarnyu(int x, int y) : szereplo(x, y, 'X') {
 		this->x = x;
 		this->y = y;
+		tag = TAG_jatekos;
 	}
 	int lep = 0;
 	virtual void szamit() {

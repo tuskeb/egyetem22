@@ -2,13 +2,17 @@
 #include "szereplo.h"
 #include "display.h"
 
+#define TAG_nemdefinialt 1
+#define TAG_ellenseg 1
+#define TAG_jatekos 2
+#define TAG_lovedek 3
+
 class szereplo {
 
 protected:
 	void torol() {
 		display::draw(x, y, ' ');
 	}
-
 
 	char c;
 	int x, y;
@@ -19,6 +23,7 @@ protected:
 
 
 public:
+	int tag = TAG_nemdefinialt;
 
 	szereplo(int x, int y, char c) {
 		this->x = x;
