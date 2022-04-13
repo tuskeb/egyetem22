@@ -32,6 +32,12 @@ public:
 		//cout << "Konstruktor";
 	}
 
+	int xvissza() {
+		return x;
+	}
+	int yvissza() {
+		return y;
+	}
 
 	void rajzol() {
 		torol();

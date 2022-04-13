@@ -95,5 +95,8 @@
     <ClInclude Include="help.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="lovedek.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

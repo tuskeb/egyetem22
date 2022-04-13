@@ -3,7 +3,7 @@
 #include <time.h>
 #include <stdio.h>    
 #include <stdlib.h>
-//#include "lovedek.h" 
+#include "lovedek.h" 
 #include "szereplo.h"
 #include "listakezeles.h"
 
@@ -27,5 +27,19 @@ public:
 		y--;
 		rajzol();
 	}
-
+	virtual void le() {
+		torol();
+		y++;
+		rajzol();
+	}
+	virtual void bal() {
+		torol();
+		x--;
+		rajzol();
+	}
+	virtual void jobb() {
+		torol();
+		x++;
+		rajzol();
+	}
 };

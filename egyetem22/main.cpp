@@ -15,6 +15,7 @@
 #include "celvonal.h"
 #include "visszaszamol.h"
 #include "help.h"
+#include "lovedek.h"
 
 
 using namespace std;
@@ -145,6 +146,21 @@ int main() {
 				if (GetAsyncKeyState('W')) {
 					dynamic_cast<xszarnyu*>(tibor)->fel();
 				}
+				if (GetAsyncKeyState('A')) {
+					dynamic_cast<xszarnyu*>(tibor)->bal();
+				}
+				if (GetAsyncKeyState('S')) {
+					dynamic_cast<xszarnyu*>(tibor)->le();
+				}
+				if (GetAsyncKeyState('D')) {
+					dynamic_cast<xszarnyu*>(tibor)->jobb();
+				}
+				if (GetAsyncKeyState('Q')) {
+				
+					szereplo* lov = new lovedek(tibor->xvissza(), tibor->yvissza()-1);
+					szereplok.hozzaad(lov);
+				}
+
 
 				bool cel_v = false;
 				szereplo* cel = new celvonal(1, 1);
