@@ -16,7 +16,7 @@ public:
 	virtual void szamit() {
 		
 		cout << "Egy jatekos eseten a nyilakkal iranyitsd a babut /D/"<<endl
-			<<"Ket jatekos eseten a numerikus nyilakkal iranyitsd a masikat es a 9-el lojj /X/";
+			<<"Ket jatekos eseten a masodik jatekost a WASD betukkel iranytsd es lojj a Q-val /X/";
 	}
 
 
