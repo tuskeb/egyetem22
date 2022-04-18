@@ -15,7 +15,7 @@ public:
 	}
 
 	virtual void szamit() {
-		
+		tag = TAG_ellenseg;
 		if (x > 0) { this->x = x--; }
 		if (x <= 1) { this->x = x = 70; }
 	}

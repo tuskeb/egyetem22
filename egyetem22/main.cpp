@@ -143,6 +143,8 @@ int main() {
 						break;
 					}
 				}
+
+				
 				if (GetAsyncKeyState('W')) {
 					dynamic_cast<xszarnyu*>(tibor)->fel();
 				}
@@ -156,15 +158,23 @@ int main() {
 					dynamic_cast<xszarnyu*>(tibor)->jobb();
 				}
 				if (GetAsyncKeyState('Q')) {
-				
-					szereplo* lov = new lovedek(tibor->xvissza(), tibor->yvissza()-1);
-					szereplok.hozzaad(lov);
-				}
 
+					szereplo* lov = new lovedek(tibor->xvissza(), tibor->yvissza() - 1);
+					szereplok.hozzaad(lov);
+					for (int i = 0; i < szereplok.elemszam(); i++) {
+						for (int j = 0; j < szereplok.elemszam()-1; j++) {
+							if (szereplok[j]->tag == TAG_ellenseg && szereplok[i]->tag == TAG_lovedek && szereplok[i]->utkozike(*szereplok[i])){
+								delete szereplok.eltavolit(j);
+							}
+
+						}
+					}
+				}
+				
 
 				bool cel_v = false;
 				szereplo* cel = new celvonal(1, 1);
-				if (cs == cel) {
+				if (cs == cel || tibor== cel) {
 					cel_v = true;
 					system("cls");
 					cout << "Gratulalok nyertel!" << " Lepeseid szama: ";
